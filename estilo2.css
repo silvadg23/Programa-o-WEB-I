@@ -1,0 +1,129 @@
+
+html {
+    background-color: gray;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin: 0;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto 1fr auto;
+    min-height: 100vh;
+}
+
+header {
+    background-color: lightgray;
+    text-align: center;
+    padding: 25px;
+}
+
+.destaque {
+    color: blue;
+    font-weight: bold;
+}
+
+h1 {
+    color: blueviolet;
+    font-size: 35px;
+}
+
+h2 {
+    color: darkblue;
+    text-align: center;
+}
+
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+
+#sobre {
+    grid-column: 1 / -1;
+
+    text-align: center;
+    background-color: white;
+    margin: 25px;
+    padding: 20px;
+    border: 2px solid darkblue;
+    border-radius: 10px;
+}
+
+
+#tecnologias {
+    grid-column: 1 / -1;
+}
+
+
+.grade-tecnologias {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+
+.cartao {
+    background-color: white;
+    border: 2px solid darkblue;
+    border-radius: 10px;
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.cartao h3 {
+    color: blueviolet;
+    margin: 0;
+}
+
+.cartao p {
+    margin: 0;
+}
+
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.tags span {
+    background-color: darkblue;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+
+#hobbies {
+    grid-column: 1 / -1;
+
+    font-weight: bold;
+    background-color: lightgray;
+    margin: 25px;
+    padding: 20px;
+    border: 2px solid darkblue;
+    border-radius: 10px;
+}
+
+footer {
+    background-color: lightblue;
+    color: white;
+    padding: 20px;
+}
+
+.centro {
+    text-align: center;
+}
+
+
